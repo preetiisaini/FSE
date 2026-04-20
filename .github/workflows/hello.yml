@@ -1,0 +1,15 @@
+name: Uses action
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code   # clone the repo
+        uses: actions/checkout@v4
+
+      - name: List files
+        run: ls
